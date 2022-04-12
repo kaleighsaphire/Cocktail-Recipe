@@ -10,8 +10,28 @@ fetch (`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`)
     console.log(data.drinks[0])
     document.querySelector('.drink-name').innerText = data.drinks[0].strDrink
     document.querySelector('img').src = data.drinks[0].strDrinkThumb
-    document.querySelector('.ingredients1').innerText = data.drinks[0].strIngredient1
+
+    document.querySelector('.ingredient1').innerText = data.drinks[0].strIngredient1
+    document.querySelector('.ingredient2').innerText = data.drinks[0].strIngredient2
+    document.querySelector('.ingredient3').innerText = data.drinks[0].strIngredient3
+    document.querySelector('.ingredient4').innerText = data.drinks[0].strIngredient4
+    document.querySelector('.ingredient5').innerText = data.drinks[0].strIngredient5
+    document.querySelector('.ingredient6').innerText = data.drinks[0].strIngredient6
+    document.querySelector('.ingredient7').innerText = data.drinks[0].strIngredient7
+    document.querySelector('.ingredient8').innerText = data.drinks[0].strIngredient8
+
+    document.querySelector('.measure1').innerText = data.drinks[0].strMeasure1
+    document.querySelector('.measure2').innerText = data.drinks[0].strMeasure2
+    document.querySelector('.measure3').innerText = data.drinks[0].strMeasure3
+    document.querySelector('.measure4').innerText = data.drinks[0].strMeasure4
+    document.querySelector('.measure5').innerText = data.drinks[0].strMeasure5
+    document.querySelector('.measure6').innerText = data.drinks[0].strMeasure6
+    document.querySelector('.measure7').innerText = data.drinks[0].strMeasure7
+    document.querySelector('.measure8').innerText = data.drinks[0].strMeasure8
+
     document.querySelector('.instructions').innerText = data.drinks[0].strInstructions
+    
+
    
 })
 .catch(err => {
